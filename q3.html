@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation form</title>
+    <link rel="stylesheet" href="q3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- <div class="visme_d" data-title="Untitled Project" data-url="ojemzxk1-untitled-project?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="73612"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script> -->
+    
+    <div class="box" >
+        <h1 class="title">SIGN UP</h1>
+        <div class="underline"></div>
+    <form id="myform">
+    <div class="inputgp">
+    
+<div class="inputfeild ">
+<i class="fa-solid fa-user"></i>
+Username:
+<input type="text" placeholder="username " id="n1" ><BR>
+
+<div class="inputfeild">
+<i class="fa-solid fa-at"></i>   
+ Email:
+ <input type="text" placeholder="email" id="n2"><BR>
+
+<div class="inputfeild">
+    <i class="fa-solid fa-key"></i>  
+Password:
+<input type="text" placeholder="password" id="n3" ><BR>
+<!-- Confirm password:<input type="text" id="confirm"><BR> -->
+</div>
+<p>forgot password  <a href="#">click here!</a></p>
+</div>
+<div class="btn">
+<button id="up">login</button>
+<!-- <button id="dis signin">Sign in</button> -->
+<p id="errorMessage" class="error"></p>
+</div>
+
+</form>
+</div>
+<!-- <script>
+    function data(){
+    let a=document.getElementById("n1")
+    let b=document.getElementById("n2")
+    let c=document.getElementById("n3")
+    if (a==" " || b==" "|| c== ""){
+        errorMessage.textContent='feild cannot be empty!';
+        alert("fill up  all details");
+   }
+   else{
+    alert("logged in succesfully!")
+   }
+}
+    </script> -->
+
+    <script>
+        document.getElementById('myForm').addEventListener('button', function(event) {
+            event.preventDefault(); 
+            const inputField = document.getElementById('inputfeild');
+            const errorMessage = document.getElementById('errorMessage');
+
+            
+            if (inputField.value.trim() === '') {
+                errorMessage.textContent = 'This field cannot be empty!';
+            } else {
+                errorMessage.textContent = '';
+                alert('Form submitted successfully!');
+               
+            }
+        });
+    </script>`
+</body>
+</html>
